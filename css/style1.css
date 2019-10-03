@@ -9,6 +9,11 @@ body {
   background: #333;
 }
 
+span {
+  display: inline-flex;
+  width: 98%;
+}
+
 .middle {
   position: absolute;
   top: 50%;
@@ -77,4 +82,32 @@ body {
 
 .card:hover > .back {
   transform: perspective(600px) rotateY(0deg);
+}
+
+.d18 {
+  margin-top: 50px;
+  position: relative;
+  width: 100px; 
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d18:before, 
+.d18:after {
+  content: "";
+  position: absolute; 
+  left: 50px; 
+  top: 0;
+  width: 50px; 
+  height: 80px;
+  background: #EE4156;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%;
+}
+.d18:after {
+  left: 0;
+  transform: rotate(45deg); 
+  transform-origin: 100% 100%;
 }
